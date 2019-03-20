@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        timestamps()
         sh 'env'
+        cleanWs()
       }
     }
   }
